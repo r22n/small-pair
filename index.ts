@@ -1,6 +1,6 @@
 
 export type Tuple = {
-    [value in string]: number;
+    [value in string]: any;
 };
 
 export function pieces(tuples: Tuple[]) {
@@ -35,7 +35,7 @@ export function pieces(tuples: Tuple[]) {
     // a
     // are prime pieces;
 
-    const memo: Tuple = {};
+    const memo: {[value in string]: number/*of memo*/} = {};
 
     // helpers
     let cup = 1;
