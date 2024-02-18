@@ -20,11 +20,11 @@ export function pieces(tuples: Tuple[]) {
     // abcdefghijk
     // -----------------
     // 1111     11
-    //   66666
-    // aa   aaaa
-    //  fff f
-    // bpmm6vgaa11 =
-    // -------------------
+    //   22222
+    // 44   4444
+    //  888 8       +
+    // ----------------
+    // 5dbb2e64411  
     //          jk
     //        hi
     //       g
@@ -35,7 +35,7 @@ export function pieces(tuples: Tuple[]) {
     // a
     // are prime pieces;
 
-    const memo: {[value in string]: number/*of memo*/} = {};
+    const memo: { [value in string]: number/*of memo*/ } = {};
 
     // helpers
     let cup = 1;
@@ -49,7 +49,7 @@ export function pieces(tuples: Tuple[]) {
 
     tuples.forEach(t => {
         Object.keys(t).forEach(add);
-        cup *= tuples.length;
+        cup *= 2;
     });
 
 

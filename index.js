@@ -16,11 +16,11 @@ function pieces(tuples) {
     // abcdefghijk
     // -----------------
     // 1111     11
-    //   66666
-    // aa   aaaa
-    //  fff f
-    // bpmm6vgaa11 =
-    // -------------------
+    //   22222
+    // 44   4444
+    //  888 8       +
+    // ----------------
+    // 5dbb2e64411  
     //          jk
     //        hi
     //       g
@@ -43,7 +43,7 @@ function pieces(tuples) {
     };
     tuples.forEach(t => {
         Object.keys(t).forEach(add);
-        cup *= tuples.length;
+        cup *= 2;
     });
     const res = {};
     Object.entries(memo).forEach(([value, memo]) => {

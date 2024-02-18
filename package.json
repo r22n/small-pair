@@ -4,7 +4,7 @@
   "description": "lookup smallest pieces from tuples",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "tsc && jest",
     "make": "tsc && webpack"
   },
   "repository": {
